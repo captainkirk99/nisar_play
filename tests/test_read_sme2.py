@@ -1,25 +1,16 @@
 """Smoke tests: verify the environment can read NISAR SME2 netCDF4/HDF5 files.
 
-Opens the sample SME2 (Level 3 Soil Moisture) product in ``data/`` with
-xarray (netCDF4 engine) and asserts the expected group structure and a
-non-empty soil moisture dataset.
+Opens an SME2 (Level 3 Soil Moisture) product — the sample granule in
+``data/`` when present, else the synthetic fixture (see ``conftest.py``) —
+with xarray (netCDF4 engine) and asserts the expected group structure and
+a non-empty soil moisture dataset.
 """
-
-from pathlib import Path
 
 import numpy as np
 import pytest
 import xarray as xr
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 GRIDS_GROUP = "/science/LSAR/SME2/grids"
-
-
-@pytest.fixture(scope="module")
-def sme2_path():
-    files = sorted(DATA_DIR.glob("NISAR_L3_*_SME2_*.h5"))
-    assert files, f"No SME2 sample file found in {DATA_DIR}"
-    return files[0]
 
 
 @pytest.fixture(scope="module")

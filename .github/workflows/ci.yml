@@ -1,0 +1,31 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Cache cartopy Natural Earth data
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/cartopy
+          key: cartopy-natural-earth
+      - name: Install project with dev and docs dependencies
+        run: pip install -e ".[dev,docs]"
+      - name: Run tests
+        run: pytest
+      - name: Build docs (strict)
+        run: mkdocs build --strict
