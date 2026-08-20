@@ -1,0 +1,1230 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gmd:DS_Series xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xs="http://www.isotc211.org/2005/xs" xmlns:eos="http://earthdata.nasa.gov/schema/eos" xmlns:echo="http://www.echo.nasa.gov/ingest/schemas/operatations" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gmx="http://www.isotc211.org/2005/gmx">
+  <gmd:composedOf>
+    <gmd:DS_DataSet>
+      <gmd:has>
+        <gmi:MI_Metadata>
+          <gmd:fileIdentifier>
+            <gco:CharacterString>NISAR_L3_PR_SME2_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5.iso.xml</gco:CharacterString>
+          </gmd:fileIdentifier>
+          <gmd:language>
+            <gco:CharacterString>eng</gco:CharacterString>
+          </gmd:language>
+          <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+          </gmd:characterSet>
+          <gmd:hierarchyLevel>
+            <gmd:MD_ScopeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:hierarchyLevel>
+          <gmd:contact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact gml:id="JPLcontactInfo">
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>4800 Oak Grove Drive</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Pasadena</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString>CA</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString>91109</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>USA</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>nisar-sds-ops@jpl.nasa.gov</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:contact>
+          <gmd:dateStamp>
+            <gco:DateTime>2026-08-19T10:34:26.8233470000Z</gco:DateTime>
+          </gmd:dateStamp>
+          <gmd:metadataStandardName>
+            <gco:CharacterString>ISO 19115-2 Geographic Information - Metadata Part 2: Extensions for acquisition and processing</gco:CharacterString>
+          </gmd:metadataStandardName>
+          <gmd:metadataStandardVersion>
+            <gco:CharacterString>ISO 19115-2:2019(E)</gco:CharacterString>
+          </gmd:metadataStandardVersion>
+          <gmd:spatialRepresentationInfo>
+            <gmd:MD_GridSpatialRepresentation>
+              <gmd:numberOfDimensions>
+                <gco:Integer>2</gco:Integer>
+              </gmd:numberOfDimensions>
+              <gmd:axisDimensionProperties>
+                <gmd:MD_Dimension>
+                  <gmd:dimensionName>
+                    <gmd:MD_DimensionNameTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_DimensionNameTypeCode" codeListValue="row">row</gmd:MD_DimensionNameTypeCode>
+                  </gmd:dimensionName>
+                  <gmd:dimensionSize>
+                    <gco:Integer>2025</gco:Integer>
+                  </gmd:dimensionSize>
+                  <gmd:resolution>
+                    <gco:Length uom="meter">200.17900466918945</gco:Length>
+                  </gmd:resolution>
+                </gmd:MD_Dimension>
+              </gmd:axisDimensionProperties>
+              <gmd:axisDimensionProperties>
+                <gmd:MD_Dimension>
+                  <gmd:dimensionName>
+                    <gmd:MD_DimensionNameTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_DimensionNameTypeCode" codeListValue="column">column</gmd:MD_DimensionNameTypeCode>
+                  </gmd:dimensionName>
+                  <gmd:dimensionSize>
+                    <gco:Integer>1665</gco:Integer>
+                  </gmd:dimensionSize>
+                  <gmd:resolution>
+                    <gco:Length uom="meter">-200.17900467012078</gco:Length>
+                  </gmd:resolution>
+                </gmd:MD_Dimension>
+              </gmd:axisDimensionProperties>
+              <gmd:cellGeometry>
+                <gmd:MD_CellGeometryCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_CellGeometryCode" codeListValue="area">area</gmd:MD_CellGeometryCode>
+              </gmd:cellGeometry>
+              <gmd:transformationParameterAvailability/>
+            </gmd:MD_GridSpatialRepresentation>
+          </gmd:spatialRepresentationInfo>
+          <gmd:referenceSystemInfo>
+            <gmd:MD_ReferenceSystem>
+              <gmd:referenceSystemIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:authority>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>European Petroleum Survey Group (EPSG) Geodetic Parameter Registry</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date gco:nilReason="inapplicable"/>
+                      <gmd:citedResponsibleParty>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:organisationName>
+                            <gco:CharacterString>European Petroleum Survey Group</gco:CharacterString>
+                          </gmd:organisationName>
+                          <gmd:contactInfo>
+                            <gmd:CI_Contact>
+                              <gmd:onlineResource>
+                                <gmd:CI_OnlineResource>
+                                  <gmd:linkage>
+                                    <gmd:URL>https://epsg.org/home.html</gmd:URL>
+                                  </gmd:linkage>
+                                  <gmd:name>
+                                    <gco:CharacterString>European Petroleum Survey Group Geodetic Parameter Dataset</gco:CharacterString>
+                                  </gmd:name>
+                                  <gmd:description>
+                                    <gco:CharacterString>Registry that accesses the EPSG Geodetic Parameter Dataset, which is a structured dataset of Coordinate Reference Systems and Coordinate Transformations.</gco:CharacterString>
+                                  </gmd:description>
+                                  <gmd:function>
+                                    <gmd:CI_OnLineFunctionCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="search">search</gmd:CI_OnLineFunctionCode>
+                                  </gmd:function>
+                                </gmd:CI_OnlineResource>
+                              </gmd:onlineResource>
+                            </gmd:CI_Contact>
+                          </gmd:contactInfo>
+                          <gmd:role gco:nilReason="inapplicable"/>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:citedResponsibleParty>
+                    </gmd:CI_Citation>
+                  </gmd:authority>
+                  <gmd:code>
+                    <gco:CharacterString>urn:ogc:def:crs:EPSG::6933</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:referenceSystemIdentifier>
+            </gmd:MD_ReferenceSystem>
+          </gmd:referenceSystemInfo>
+          <gmd:identificationInfo>
+            <gmd:MD_DataIdentification>
+              <gmd:citation>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gmx:FileName>NISAR_L3_PR_SME2_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5</gmx:FileName>
+                  </gmd:title>
+                  <gmd:alternateTitle>
+                    <gco:CharacterString>Soil moisture product (SME2)</gco:CharacterString>
+                  </gmd:alternateTitle>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:DateTime>2026-08-19T10:34:26.8233470000Z</gco:DateTime>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.0.11</gco:CharacterString>
+                  </gmd:edition>
+                  <gmi:identifier>
+                    <gmd:RS_Identifier>
+                      <gmd:code>
+                        <gco:CharacterString>P05023</gco:CharacterString>
+                      </gmd:code>
+                      <gmd:codeSpace>
+                        <gco:CharacterString>gov.nasa.esdis.umm.crid</gco:CharacterString>
+                      </gmd:codeSpace>
+                    </gmd:RS_Identifier>
+                  </gmi:identifier>
+                  <gmd:citedResponsibleParty>
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:organisationName>
+                        <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:contactInfo>
+                        <gmd:CI_Contact xlink:href="#JPLcontactInfo"/>
+                      </gmd:contactInfo>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:citedResponsibleParty>
+                  <gmd:presentationForm>
+                    <gmd:CI_PresentationFormCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="documentDigital">documentDigital</gmd:CI_PresentationFormCode>
+                  </gmd:presentationForm>
+                  <gmd:series>
+                    <gmd:CI_Series>
+                      <gmd:name>
+                        <gco:CharacterString>The granule for the generation of this product has been acquired as part of the NISAR mission. The NISAR satellite was launched on {launch date}. NISAR has a 12-day repeat cycle.</gco:CharacterString>
+                      </gmd:name>
+                    </gmd:CI_Series>
+                  </gmd:series>
+                </gmd:CI_Citation>
+              </gmd:citation>
+              <gmd:abstract>
+                <gco:CharacterString>The L3 SME2 product is derived from the geocoded polarimetric covariance and some ancillary information.</gco:CharacterString>
+              </gmd:abstract>
+              <gmd:status>
+                <gmd:MD_ProgressCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="completed">completed</gmd:MD_ProgressCode>
+              </gmd:status>
+              <gmd:resourceMaintenance>
+                <gmd:MD_MaintenanceInformation>
+                  <gmd:maintenanceAndUpdateFrequency>
+                    <gmd:MD_MaintenanceFrequencyCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+                  </gmd:maintenanceAndUpdateFrequency>
+                </gmd:MD_MaintenanceInformation>
+              </gmd:resourceMaintenance>
+              <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                  <gmd:keyword>
+                    <gco:CharacterString>NISAR</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:type>
+                    <gmd:MD_KeywordTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="platform">platform</gmd:MD_KeywordTypeCode>
+                  </gmd:type>
+                  <gmd:thesaurusName>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>NASA Platform Keywords</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date gco:nilReason="unknown"/>
+                      <gmd:citedResponsibleParty>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:organisationName>
+                            <gco:CharacterString>NASA</gco:CharacterString>
+                          </gmd:organisationName>
+                          <gmd:positionName>
+                            <gco:CharacterString>User Support Office</gco:CharacterString>
+                          </gmd:positionName>
+                          <gmd:contactInfo>
+                            <gmd:CI_Contact>
+                              <gmd:onlineResource>
+                                <gmd:CI_OnlineResource>
+                                  <gmd:linkage>
+                                    <gmd:URL>https://support.earthdata.nasa.gov/</gmd:URL>
+                                  </gmd:linkage>
+                                  <gmd:name>
+                                    <gco:CharacterString>Earthdata Support</gco:CharacterString>
+                                  </gmd:name>
+                                  <gmd:description>
+                                    <gco:CharacterString>File an issue or provide feedback</gco:CharacterString>
+                                  </gmd:description>
+                                  <gmd:function>
+                                    <gmd:CI_OnLineFunctionCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+                                  </gmd:function>
+                                </gmd:CI_OnlineResource>
+                              </gmd:onlineResource>
+                            </gmd:CI_Contact>
+                          </gmd:contactInfo>
+                          <gmd:role>
+                            <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian">custodian</gmd:CI_RoleCode>
+                          </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:citedResponsibleParty>
+                    </gmd:CI_Citation>
+                  </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+              </gmd:descriptiveKeywords>
+              <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                  <gmd:keyword>
+                    <gco:CharacterString>L-SAR</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:type>
+                    <gmd:MD_KeywordTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="instrument">instrument</gmd:MD_KeywordTypeCode>
+                  </gmd:type>
+                  <gmd:thesaurusName>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>NASA Instrument Keywords</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date gco:nilReason="unknown"/>
+                      <gmd:citedResponsibleParty>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:organisationName>
+                            <gco:CharacterString>NASA</gco:CharacterString>
+                          </gmd:organisationName>
+                          <gmd:positionName>
+                            <gco:CharacterString>User Support Office</gco:CharacterString>
+                          </gmd:positionName>
+                          <gmd:contactInfo>
+                            <gmd:CI_Contact>
+                              <gmd:onlineResource>
+                                <gmd:CI_OnlineResource>
+                                  <gmd:linkage>
+                                    <gmd:URL>https://support.earthdata.nasa.gov/</gmd:URL>
+                                  </gmd:linkage>
+                                  <gmd:name>
+                                    <gco:CharacterString>Earthdata Support</gco:CharacterString>
+                                  </gmd:name>
+                                  <gmd:description>
+                                    <gco:CharacterString>File an issue or provide feedback</gco:CharacterString>
+                                  </gmd:description>
+                                  <gmd:function>
+                                    <gmd:CI_OnLineFunctionCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+                                  </gmd:function>
+                                </gmd:CI_OnlineResource>
+                              </gmd:onlineResource>
+                            </gmd:CI_Contact>
+                          </gmd:contactInfo>
+                          <gmd:role>
+                            <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian">custodian</gmd:CI_RoleCode>
+                          </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:citedResponsibleParty>
+                    </gmd:CI_Citation>
+                  </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+              </gmd:descriptiveKeywords>
+              <gmd:descriptiveKeywords>
+                <gmd:MD_Keywords>
+                  <gmd:keyword>
+                    <gco:CharacterString>10.5067/NIL3SME2-P1</gco:CharacterString>
+                  </gmd:keyword>
+                  <gmd:type>
+                    <gmd:MD_KeywordTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="project">project</gmd:MD_KeywordTypeCode>
+                  </gmd:type>
+                  <gmd:thesaurusName>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>NASA Related URL Content Type Keywords</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date gco:nilReason="unknown"/>
+                      <gmd:citedResponsibleParty>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:organisationName>
+                            <gco:CharacterString>NASA</gco:CharacterString>
+                          </gmd:organisationName>
+                          <gmd:positionName>
+                            <gco:CharacterString>User Support Office</gco:CharacterString>
+                          </gmd:positionName>
+                          <gmd:contactInfo>
+                            <gmd:CI_Contact>
+                              <gmd:onlineResource>
+                                <gmd:CI_OnlineResource>
+                                  <gmd:linkage>
+                                    <gmd:URL>https://doi.org/10.5067/NIL3SME2-B1</gmd:URL>
+                                  </gmd:linkage>
+                                  <gmd:name>
+                                    <gco:CharacterString>Data set landing page</gco:CharacterString>
+                                  </gmd:name>
+                                  <gmd:description>
+                                    <gco:CharacterString>Landing page of the NISAR L3 SME2 product</gco:CharacterString>
+                                  </gmd:description>
+                                  <gmd:function>
+                                    <gmd:CI_OnLineFunctionCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+                                  </gmd:function>
+                                </gmd:CI_OnlineResource>
+                              </gmd:onlineResource>
+                            </gmd:CI_Contact>
+                          </gmd:contactInfo>
+                          <gmd:role>
+                            <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian">custodian</gmd:CI_RoleCode>
+                          </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:citedResponsibleParty>
+                    </gmd:CI_Citation>
+                  </gmd:thesaurusName>
+                </gmd:MD_Keywords>
+              </gmd:descriptiveKeywords>
+              <gmd:resourceConstraints>
+                <gmd:MD_LegalConstraints>
+                  <gmd:accessConstraints>
+                    <gmd:MD_RestrictionCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+                  </gmd:accessConstraints>
+                  <gmd:useConstraints>
+                    <gmd:MD_RestrictionCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+                  </gmd:useConstraints>
+                  <gmd:otherConstraints>
+                    <gco:CharacterString>Creative Commons Zero v1.0 Universal (https://spdx.org/licenses/CC0-1.0.html)</gco:CharacterString>
+                  </gmd:otherConstraints>
+                </gmd:MD_LegalConstraints>
+              </gmd:resourceConstraints>
+              <gmd:aggregationInfo>
+                <gmd:MD_AggregateInformation>
+                  <gmd:aggregateDataSetName>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>NISAR Project Homepage</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date gco:nilReason="unknown"/>
+                      <gmd:citedResponsibleParty>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:contactInfo>
+                            <gmd:CI_Contact>
+                              <gmd:onlineResource>
+                                <gmd:CI_OnlineResource>
+                                  <gmd:linkage>
+                                    <gmd:URL>https://nisar.jpl.nasa.gov/</gmd:URL>
+                                  </gmd:linkage>
+                                  <gmd:description>
+                                    <gco:CharacterString>NISAR Project homepage</gco:CharacterString>
+                                  </gmd:description>
+                                  <gmd:function>
+                                    <gmd:CI_OnLineFunctionCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+                                  </gmd:function>
+                                </gmd:CI_OnlineResource>
+                              </gmd:onlineResource>
+                            </gmd:CI_Contact>
+                          </gmd:contactInfo>
+                          <gmd:role>
+                            <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian">custodian</gmd:CI_RoleCode>
+                          </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:citedResponsibleParty>
+                    </gmd:CI_Citation>
+                  </gmd:aggregateDataSetName>
+                  <gmd:associationType>
+                    <gmd:DS_AssociationTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#DS_AssociationTypeCode" codeListValue="LargerWorkCitation">LargerWorkCitation</gmd:DS_AssociationTypeCode>
+                  </gmd:associationType>
+                </gmd:MD_AggregateInformation>
+              </gmd:aggregationInfo>
+              <gmd:spatialRepresentationType>
+                <gmd:MD_SpatialRepresentationTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid">grid</gmd:MD_SpatialRepresentationTypeCode>
+              </gmd:spatialRepresentationType>
+              <gmd:language>
+                <gco:CharacterString>eng</gco:CharacterString>
+              </gmd:language>
+              <gmd:characterSet>
+                <gmd:MD_CharacterSetCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+              </gmd:characterSet>
+              <gmd:topicCategory>
+                <gmd:MD_TopicCategoryCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_TopicCategoryCode" codeListValue="geoscientificInformation">geoscientificInformation</gmd:MD_TopicCategoryCode>
+              </gmd:topicCategory>
+              <gmd:environmentDescription>
+                <gco:CharacterString>Data product generated in HDF5 format with ISO 19115 conformant metadata.</gco:CharacterString>
+              </gmd:environmentDescription>
+              <gmd:extent>
+                <gmd:EX_Extent>
+                  <gmd:description>
+                    <gco:CharacterString>geographic and temporal extent of the product</gco:CharacterString>
+                  </gmd:description>
+                  <gmd:geographicElement>
+                    <gmd:EX_BoundingPolygon gml:id="imageBoundingPolygon">
+                      <gmd:extentTypeCode>
+                        <gco:Boolean>true</gco:Boolean>
+                      </gmd:extentTypeCode>
+                      <gmd:polygon>
+                        <gml:Polygon>
+                          <gml:exterior>
+                            <gml:LinearRing>
+                              <gml:posList>-113.724785584699 35.9196572802453 848.052373003028,-113.808414641756 36.1292551371859 1321.85900901435,-113.875439563059 36.3428878514836 739.96355120932,-113.958449118079 36.552726504149 1124.14965820409,-114.026722466098 36.7661514173672 574.139709474099,-114.107023784552 36.976734289965 740.452148069188,-114.191864153691 37.1862747064053 1158.94152733988,-114.281609406841 37.3946837662558 1851.31201111161,-114.356935578206 37.6066076774059 1632.78137206996,-114.434192838661 37.8181171646362 1507.2933349571,-114.517853727947 38.0281376807574 1745.45788530293,-114.841946994067 37.9500293458182 1604.14990234239,-115.156989923682 37.8730811717617 1835.70361328223,-115.457167582039 37.7988320073529 1906.76391609728,-115.739734305126 37.72811195794 1427.22631804659,-116.022930472322 37.6564075350111 1692.07617187615,-116.2964818711 37.5863697068924 1834.87915038964,-116.559010783452 37.5184391243087 1625.32275300166,-116.818258205924 37.4506596029263 1672.80371238506,-117.067746592494 37.3847847575205 1312.29846191367,-117.321836028932 37.3170202534212 1906.57543945332,-117.228441011981 37.1098086727871 1257.96191406451,-117.146405337587 36.8996011021802 1721.85681241891,-117.045585229772 36.694511329888 204.793754446967,-116.957009105548 36.4861883014481 -107.229667727125,-116.871892807845 36.2769963493865 -114.060066370155,-116.787364981673 36.0677077069855 -109.504379403676,-116.707942016271 35.8571100438048 374.922332763803,-116.626209859321 35.647191893464 573.687623302724,-116.548140152014 35.4363518497143 1107.5107405434,-116.458678784646 35.2286228925383 405.235291456512,-116.219848934704 35.2919375580323 794.541931152091,-115.970959490429 35.357321779042 653.958129883786,-115.723088958754 35.421816926719 1119.26635809166,-115.462661865418 35.4889314522832 967.891906738448,-115.204004018271 35.5549142649973 1550.62841809411,-114.922867599487 35.6259003009985 890.723266602339,-114.635407426351 35.6976733313197 486.689911065613,-114.350746700842 35.7679321754535 1056.59765744702,-114.05380567997 35.8403763684318 1540.23284674865,-113.724785584699 35.9196572802453 848.052373003028</gml:posList>
+                            </gml:LinearRing>
+                          </gml:exterior>
+                        </gml:Polygon>
+                      </gmd:polygon>
+                    </gmd:EX_BoundingPolygon>
+                  </gmd:geographicElement>
+                  <gmd:temporalElement>
+                    <gmd:EX_TemporalExtent>
+                      <gmd:extent gml:id="temporalExtent">
+                        <gml:TimePeriod>
+                          <gmd:description>
+                            <gco:CharacterString>start and end zero Doppler time of reference data acquisition</gco:CharacterString>
+                          </gmd:description>
+                          <gml:beginPosition>
+                            <gco:CharacterString>2026-08-13T12:52:18</gco:CharacterString>
+                          </gml:beginPosition>
+                          <gml:endPosition>
+                            <gco:CharacterString>2026-08-13T12:52:53</gco:CharacterString>
+                          </gml:endPosition>
+                        </gml:TimePeriod>
+                      </gmd:extent>
+                    </gmd:EX_TemporalExtent>
+                  </gmd:temporalElement>
+                </gmd:EX_Extent>
+              </gmd:extent>
+            </gmd:MD_DataIdentification>
+          </gmd:identificationInfo>
+          <gmd:contentInfo>
+            <gmd:MD_CoverageDescription>
+              <gmd:attributeDescription>
+                <gco:RecordType xlink:href="http://earthdata.nasa.gov/schemas/eos/eos.xsd#xpointer(//element[@name='EOS_AdditionalAttributes'])">Soil moisture DSG product</gco:RecordType>
+              </gmd:attributeDescription>
+              <gmd:contentType>
+                <gmd:MD_CoverageContentTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="image">image</gmd:MD_CoverageContentTypeCode>
+              </gmd:contentType>
+              <gmd:dimension>
+                <gmd:MD_Band>
+                  <gmd:maxValue>
+                    <gco:Real>0.6</gco:Real>
+                  </gmd:maxValue>
+                  <gmd:minValue>
+                    <gco:Real>0.02</gco:Real>
+                  </gmd:minValue>
+                  <gmd:meanValue>
+                    <gco:Real>0.12519231</gco:Real>
+                  </gmd:meanValue>
+                  <gmd:standardDeviation>
+                    <gco:Real>0.0915515</gco:Real>
+                  </gmd:standardDeviation>
+                </gmd:MD_Band>
+              </gmd:dimension>
+            </gmd:MD_CoverageDescription>
+          </gmd:contentInfo>
+          <gmd:contentInfo>
+            <gmd:MD_CoverageDescription>
+              <gmd:attributeDescription>
+                <gco:RecordType xlink:href="http://earthdata.nasa.gov/schemas/eos/eos.xsd#xpointer(//element[@name='EOS_AdditionalAttributes'])">Soil moisture TSR product</gco:RecordType>
+              </gmd:attributeDescription>
+              <gmd:contentType>
+                <gmd:MD_CoverageContentTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="image">image</gmd:MD_CoverageContentTypeCode>
+              </gmd:contentType>
+              <gmd:dimension>
+                <gmd:MD_Band>
+                  <gmd:maxValue>
+                    <gco:Real>0.266</gco:Real>
+                  </gmd:maxValue>
+                  <gmd:minValue>
+                    <gco:Real>0.021</gco:Real>
+                  </gmd:minValue>
+                  <gmd:meanValue>
+                    <gco:Real>0.0873836</gco:Real>
+                  </gmd:meanValue>
+                  <gmd:standardDeviation>
+                    <gco:Real>0.021850603</gco:Real>
+                  </gmd:standardDeviation>
+                </gmd:MD_Band>
+              </gmd:dimension>
+            </gmd:MD_CoverageDescription>
+          </gmd:contentInfo>
+          <gmd:contentInfo>
+            <gmd:MD_CoverageDescription>
+              <gmd:attributeDescription>
+                <gco:RecordType xlink:href="http://earthdata.nasa.gov/schemas/eos/eos.xsd#xpointer(//element[@name='EOS_AdditionalAttributes'])">Soil moisture PMI product</gco:RecordType>
+              </gmd:attributeDescription>
+              <gmd:contentType>
+                <gmd:MD_CoverageContentTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="image">image</gmd:MD_CoverageContentTypeCode>
+              </gmd:contentType>
+              <gmd:dimension>
+                <gmd:MD_Band>
+                  <gmd:maxValue>
+                    <gco:Real>0.45202902</gco:Real>
+                  </gmd:maxValue>
+                  <gmd:minValue>
+                    <gco:Real>0.01245708</gco:Real>
+                  </gmd:minValue>
+                  <gmd:meanValue>
+                    <gco:Real>0.11104902</gco:Real>
+                  </gmd:meanValue>
+                  <gmd:standardDeviation>
+                    <gco:Real>0.051536746</gco:Real>
+                  </gmd:standardDeviation>
+                </gmd:MD_Band>
+              </gmd:dimension>
+            </gmd:MD_CoverageDescription>
+          </gmd:contentInfo>
+          <gmd:distributionInfo>
+            <gmd:MD_Distribution>
+              <gmd:distributionFormat>
+                <gmd:MD_Format>
+                  <gmd:name>
+                    <gco:CharacterString>HDF5</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:version>
+                    <gco:CharacterString>1.14.5</gco:CharacterString>
+                  </gmd:version>
+                </gmd:MD_Format>
+              </gmd:distributionFormat>
+              <gmd:distributor>
+                <gmd:MD_Distributor>
+                  <gmd:distributorContact>
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:organisationName>
+                        <gco:CharacterString>Alaska Satellite Facility</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:contactInfo>
+                        <gmd:CI_Contact gml:id="ASFcontactInfo">
+                          <gmd:phone>
+                            <gmd:CI_Telephone>
+                              <gmd:voice>
+                                <gco:CharacterString>907-474-5041</gco:CharacterString>
+                              </gmd:voice>
+                            </gmd:CI_Telephone>
+                          </gmd:phone>
+                          <gmd:address>
+                            <gmd:CI_Address>
+                              <gmd:deliveryPoint>
+                                <gco:CharacterString>2156 Koyukuk Dr.</gco:CharacterString>
+                              </gmd:deliveryPoint>
+                              <gmd:city>
+                                <gco:CharacterString>Fairbanks</gco:CharacterString>
+                              </gmd:city>
+                              <gmd:administrativeArea>
+                                <gco:CharacterString>AK</gco:CharacterString>
+                              </gmd:administrativeArea>
+                              <gmd:postalCode>
+                                <gco:CharacterString>99775-7320</gco:CharacterString>
+                              </gmd:postalCode>
+                              <gmd:country>
+                                <gco:CharacterString>USA</gco:CharacterString>
+                              </gmd:country>
+                              <gmd:electronicMailAddress>
+                                <gco:CharacterString>uso@asf.alaska.edu</gco:CharacterString>
+                              </gmd:electronicMailAddress>
+                            </gmd:CI_Address>
+                          </gmd:address>
+                        </gmd:CI_Contact>
+                      </gmd:contactInfo>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:distributorContact>
+                  <gmd:distributionOrderProcess>
+                    <gmd:MD_StandardOrderProcess>
+                      <gmd:fees>
+                        <gco:CharacterString>free</gco:CharacterString>
+                      </gmd:fees>
+                    </gmd:MD_StandardOrderProcess>
+                  </gmd:distributionOrderProcess>
+                </gmd:MD_Distributor>
+              </gmd:distributor>
+            </gmd:MD_Distribution>
+          </gmd:distributionInfo>
+          <gmd:dataQualityInfo>
+            <gmd:DQ_DataQuality>
+              <gmd:scope>
+                <gmd:DQ_Scope>
+                  <gmd:level>
+                    <gmd:MD_ScopeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+                  </gmd:level>
+                </gmd:DQ_Scope>
+              </gmd:scope>
+              <gmd:report>
+                <gmd:DQ_QuantitativeAttributeAccuracy>
+                  <gmd:nameOfMeasure>
+                    <gco:CharacterString>joint observation flag</gco:CharacterString>
+                  </gmd:nameOfMeasure>
+                  <gmd:evaluationMethodType>
+                    <gmd:DQ_EvaluationMethodTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode" codeListValue="directInternal">directInternal</gmd:DQ_EvaluationMethodTypeCode>
+                  </gmd:evaluationMethodType>
+                  <gmd:result>
+                    <gmd:DQ_QuantitativeResult>
+                      <gmd:valueUnit gco:nilReason="inapplicable"/>
+                      <gmd:value>
+                        <gco:Record xsi:type="CharacterString_PropertyType">
+                          <gco:CharacterString>False</gco:CharacterString>
+                        </gco:Record>
+                      </gmd:value>
+                    </gmd:DQ_QuantitativeResult>
+                  </gmd:result>
+                </gmd:DQ_QuantitativeAttributeAccuracy>
+              </gmd:report>
+              <gmd:report>
+                <gmd:DQ_QuantitativeAttributeAccuracy>
+                  <gmd:nameOfMeasure>
+                    <gco:CharacterString>full frame flag</gco:CharacterString>
+                  </gmd:nameOfMeasure>
+                  <gmd:evaluationMethodType>
+                    <gmd:DQ_EvaluationMethodTypeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#DQ_EvaluationMethodTypeCode" codeListValue="directInternal">directInternal</gmd:DQ_EvaluationMethodTypeCode>
+                  </gmd:evaluationMethodType>
+                  <gmd:result>
+                    <gmd:DQ_QuantitativeResult>
+                      <gmd:valueUnit gco:nilReason="inapplicable"/>
+                      <gmd:value>
+                        <gco:Record xsi:type="CharacterString_PropertyType">
+                          <gco:CharacterString>True</gco:CharacterString>
+                        </gco:Record>
+                      </gmd:value>
+                    </gmd:DQ_QuantitativeResult>
+                  </gmd:result>
+                </gmd:DQ_QuantitativeAttributeAccuracy>
+              </gmd:report>
+              <gmd:lineage>
+                <gmd:LI_Lineage>
+                  <gmd:statement>
+                    <gco:CharacterString>NISAR L3 SME2 product generated by JPL (version 0.4.2), delivered by ASF</gco:CharacterString>
+                  </gmd:statement>
+                  <gmd:processStep>
+                    <gmi:LE_ProcessStep>
+                      <gmd:description>
+                        <gco:CharacterString>The disaggregation algorithm estimates soil moisture from the geocoded polarimetric covariance in the EASE grid map projection.</gco:CharacterString>
+                      </gmd:description>
+                      <gmd:dateTime>
+                        <gco:DateTime>2026-08-19T10:34:26.8233470000Z</gco:DateTime>
+                      </gmd:dateTime>
+                      <gmd:processor>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:organisationName>
+                            <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+                          </gmd:organisationName>
+                          <gmd:contactInfo xlink:href="#JPLcontactInfo"/>
+                          <gmd:role>
+                            <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+                          </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:processor>
+                      <gmd:source>
+                        <gmd:LI_Source>
+                          <gmd:description>
+                            <gco:CharacterString>Geocoded polarimetric covariance</gco:CharacterString>
+                          </gmd:description>
+                        </gmd:LI_Source>
+                      </gmd:source>
+                      <gmi:processingInformation>
+                        <gmi:LE_Processing>
+                          <gmi:identifier>
+                            <gmd:MD_Identifier>
+                              <gmd:code>
+                                <gco:CharacterString>L3 SME2 DSG generation</gco:CharacterString>
+                              </gmd:code>
+                            </gmd:MD_Identifier>
+                          </gmi:identifier>
+                          <gmi:softwareReference>
+                            <gmd:CI_Citation>
+                              <gmd:title>
+                                <gco:CharacterString>SM_L_PGE</gco:CharacterString>
+                              </gmd:title>
+                              <gmd:date gco:nilReason="inapplicable"/>
+                              <gmd:edition>
+                                <gco:CharacterString>R05.02.0</gco:CharacterString>
+                              </gmd:edition>
+                              <gmd:citedResponsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:organisationName>
+                                    <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+                                  </gmd:organisationName>
+                                  <gmd:role>
+                                    <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                                  </gmd:role>
+                                </gmd:CI_ResponsibleParty>
+                              </gmd:citedResponsibleParty>
+                            </gmd:CI_Citation>
+                          </gmi:softwareReference>
+                        </gmi:LE_Processing>
+                      </gmi:processingInformation>
+                      <gmi:output>
+                        <gmd:LI_Source>
+                          <gmd:description>
+                            <gco:CharacterString>Soil moisture (L2 SME2 DSG) - output/NISAR_L3_PR_SME2_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5</gco:CharacterString>
+                          </gmd:description>
+                        </gmd:LI_Source>
+                      </gmi:output>
+                    </gmi:LE_ProcessStep>
+                  </gmd:processStep>
+                  <gmd:source>
+                    <gmd:LI_Source>
+                      <gmd:description>
+                        <gco:CharacterString>Geocoded Polarimetric Covariance (L2 GCOV) - ['NISAR_L2_PR_GCOV_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5', 'NISAR_L3_PR_SME2_026_005_A_020_4005_DHDH_A_20260720T125219_20260720T125254_P05023_N_F_J_001.h5', 'NISAR_L3_PR_SME2_025_005_A_020_4005_DHDH_A_20260708T125220_20260708T125254_P05023_N_F_J_001.h5']</gco:CharacterString>
+                      </gmd:description>
+                    </gmd:LI_Source>
+                  </gmd:source>
+                </gmd:LI_Lineage>
+              </gmd:lineage>
+            </gmd:DQ_DataQuality>
+          </gmd:dataQualityInfo>
+          <gmd:dataQualityInfo>
+            <gmd:DQ_DataQuality>
+              <gmd:scope>
+                <gmd:DQ_Scope>
+                  <gmd:level>
+                    <gmd:MD_ScopeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+                  </gmd:level>
+                </gmd:DQ_Scope>
+              </gmd:scope>
+              <gmd:lineage>
+                <gmd:LI_Lineage>
+                  <gmd:statement>
+                    <gco:CharacterString>NISAR L3 SME2 TSR product generated by JPL (version 0.4.2), delivered by ASF</gco:CharacterString>
+                  </gmd:statement>
+                  <gmd:processStep>
+                    <gmi:LE_ProcessStep>
+                      <gmd:description>
+                        <gco:CharacterString>The time series ratio algorithm estimates soil moisture from the geocoded polarimetric covariance in the EASE grid projection</gco:CharacterString>
+                      </gmd:description>
+                      <gmd:dateTime>
+                        <gco:DateTime>2026-08-19T10:34:26.8233470000Z</gco:DateTime>
+                      </gmd:dateTime>
+                      <gmd:processor>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:organisationName>
+                            <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+                          </gmd:organisationName>
+                          <gmd:contactInfo xlink:href="#JPLcontactInfo"/>
+                          <gmd:role>
+                            <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+                          </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:processor>
+                      <gmd:source>
+                        <gmd:LI_Source>
+                          <gmd:description>
+                            <gco:CharacterString>Geocoded polarimetric covariance</gco:CharacterString>
+                          </gmd:description>
+                        </gmd:LI_Source>
+                      </gmd:source>
+                      <gmi:processingInformation>
+                        <gmi:LE_Processing>
+                          <gmi:identifier>
+                            <gmd:MD_Identifier>
+                              <gmd:code>
+                                <gco:CharacterString>L3 SME2 TSR generation</gco:CharacterString>
+                              </gmd:code>
+                            </gmd:MD_Identifier>
+                          </gmi:identifier>
+                          <gmi:softwareReference>
+                            <gmd:CI_Citation>
+                              <gmd:title>
+                                <gco:CharacterString>SM_L_PGE</gco:CharacterString>
+                              </gmd:title>
+                              <gmd:date gco:nilReason="inapplicable"/>
+                              <gmd:edition>
+                                <gco:CharacterString>R05.02.0</gco:CharacterString>
+                              </gmd:edition>
+                              <gmd:citedResponsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:organisationName>
+                                    <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+                                  </gmd:organisationName>
+                                  <gmd:role>
+                                    <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                                  </gmd:role>
+                                </gmd:CI_ResponsibleParty>
+                              </gmd:citedResponsibleParty>
+                            </gmd:CI_Citation>
+                          </gmi:softwareReference>
+                        </gmi:LE_Processing>
+                      </gmi:processingInformation>
+                      <gmi:output>
+                        <gmd:LI_Source>
+                          <gmd:description>
+                            <gco:CharacterString>Soil moisture (L2 SME2 TSR) - output/NISAR_L3_PR_SME2_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5</gco:CharacterString>
+                          </gmd:description>
+                        </gmd:LI_Source>
+                      </gmi:output>
+                    </gmi:LE_ProcessStep>
+                  </gmd:processStep>
+                  <gmd:source>
+                    <gmd:LI_Source>
+                      <gmd:description>
+                        <gco:CharacterString>Geocoded Polarimetric Covariance (L2 GCOV) - ['NISAR_L2_PR_GCOV_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5', 'NISAR_L3_PR_SME2_026_005_A_020_4005_DHDH_A_20260720T125219_20260720T125254_P05023_N_F_J_001.h5', 'NISAR_L3_PR_SME2_025_005_A_020_4005_DHDH_A_20260708T125220_20260708T125254_P05023_N_F_J_001.h5']</gco:CharacterString>
+                      </gmd:description>
+                    </gmd:LI_Source>
+                  </gmd:source>
+                </gmd:LI_Lineage>
+              </gmd:lineage>
+            </gmd:DQ_DataQuality>
+          </gmd:dataQualityInfo>
+          <gmd:dataQualityInfo>
+            <gmd:DQ_DataQuality>
+              <gmd:scope>
+                <gmd:DQ_Scope>
+                  <gmd:level>
+                    <gmd:MD_ScopeCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+                  </gmd:level>
+                </gmd:DQ_Scope>
+              </gmd:scope>
+              <gmd:lineage>
+                <gmd:LI_Lineage>
+                  <gmd:statement>
+                    <gco:CharacterString>NISAR L3 SME2 PMI product generated by JPL (version 0.4.2), delivered by ASF</gco:CharacterString>
+                  </gmd:statement>
+                  <gmd:processStep>
+                    <gmi:LE_ProcessStep>
+                      <gmd:description>
+                        <gco:CharacterString>The physical model inversion algorithm estimates soil moisture from the geocoded polarimetric covariance in the EASE grid projection</gco:CharacterString>
+                      </gmd:description>
+                      <gmd:dateTime>
+                        <gco:DateTime>2026-08-19T10:34:26.8233470000Z</gco:DateTime>
+                      </gmd:dateTime>
+                      <gmd:processor>
+                        <gmd:CI_ResponsibleParty>
+                          <gmd:organisationName>
+                            <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+                          </gmd:organisationName>
+                          <gmd:contactInfo xlink:href="#JPLcontactInfo"/>
+                          <gmd:role>
+                            <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor">processor</gmd:CI_RoleCode>
+                          </gmd:role>
+                        </gmd:CI_ResponsibleParty>
+                      </gmd:processor>
+                      <gmd:source>
+                        <gmd:LI_Source>
+                          <gmd:description>
+                            <gco:CharacterString>Geocoded polarimetric covariance</gco:CharacterString>
+                          </gmd:description>
+                        </gmd:LI_Source>
+                      </gmd:source>
+                      <gmi:processingInformation>
+                        <gmi:LE_Processing>
+                          <gmi:identifier>
+                            <gmd:MD_Identifier>
+                              <gmd:code>
+                                <gco:CharacterString>L3 SME2 PMI generation</gco:CharacterString>
+                              </gmd:code>
+                            </gmd:MD_Identifier>
+                          </gmi:identifier>
+                          <gmi:softwareReference>
+                            <gmd:CI_Citation>
+                              <gmd:title>
+                                <gco:CharacterString>SM_L_PGE</gco:CharacterString>
+                              </gmd:title>
+                              <gmd:date gco:nilReason="inapplicable"/>
+                              <gmd:edition>
+                                <gco:CharacterString>R05.02.0</gco:CharacterString>
+                              </gmd:edition>
+                              <gmd:citedResponsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:organisationName>
+                                    <gco:CharacterString>Jet Propulsion Laboratory</gco:CharacterString>
+                                  </gmd:organisationName>
+                                  <gmd:role>
+                                    <gmd:CI_RoleCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                                  </gmd:role>
+                                </gmd:CI_ResponsibleParty>
+                              </gmd:citedResponsibleParty>
+                            </gmd:CI_Citation>
+                          </gmi:softwareReference>
+                        </gmi:LE_Processing>
+                      </gmi:processingInformation>
+                      <gmi:output>
+                        <gmd:LI_Source>
+                          <gmd:description>
+                            <gco:CharacterString>Soil moisture PMI product (L2 SME2) - output/NISAR_L3_PR_SME2_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5</gco:CharacterString>
+                          </gmd:description>
+                        </gmd:LI_Source>
+                      </gmi:output>
+                    </gmi:LE_ProcessStep>
+                  </gmd:processStep>
+                  <gmd:source>
+                    <gmd:LI_Source>
+                      <gmd:description>
+                        <gco:CharacterString>Geocoded Polarimetric Covariance (L2 GCOV) - ['NISAR_L2_PR_GCOV_028_005_A_020_4005_DHDH_A_20260813T125218_20260813T125253_P05023_N_F_J_001.h5', 'NISAR_L3_PR_SME2_026_005_A_020_4005_DHDH_A_20260720T125219_20260720T125254_P05023_N_F_J_001.h5', 'NISAR_L3_PR_SME2_025_005_A_020_4005_DHDH_A_20260708T125220_20260708T125254_P05023_N_F_J_001.h5']</gco:CharacterString>
+                      </gmd:description>
+                    </gmd:LI_Source>
+                  </gmd:source>
+                </gmd:LI_Lineage>
+              </gmd:lineage>
+            </gmd:DQ_DataQuality>
+          </gmd:dataQualityInfo>
+          <gmd:metadataMaintenance>
+            <gmd:MD_MaintenanceInformation>
+              <gmd:maintenanceAndUpdateFrequency>
+                <gmd:MD_MaintenanceFrequencyCode codeList="https://cdn.earthdata.nasa.gov/iso/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded">asNeeded</gmd:MD_MaintenanceFrequencyCode>
+              </gmd:maintenanceAndUpdateFrequency>
+            </gmd:MD_MaintenanceInformation>
+          </gmd:metadataMaintenance>
+          <gmi:acquisitionInformation>
+            <gmi:MI_AcquisitionInformation>
+              <gmi:instrument>
+                <gmi:MI_Instrument gml:id="sarInstrument">
+                  <gmi:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gco:CharacterString>SAR</gco:CharacterString>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmi:identifier>
+                  <gmi:type>
+                    <gco:CharacterString>Synthetic Aperture Radar</gco:CharacterString>
+                  </gmi:type>
+                  <gmi:mountedOn xlink:href="#sarPlatform"/>
+                </gmi:MI_Instrument>
+              </gmi:instrument>
+              <gmi:platform>
+                <eos:EOS_Platform>
+                  <gmi:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gco:CharacterString>NISAR</gco:CharacterString>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmi:identifier>
+                  <gmi:description>
+                    <gco:CharacterString>The NASA-ISRO Synthetic Aperture Radar (NISAR) mission is a joint project between NASA and ISRO to co-develop and launch a dual-frequency synthetic aperture radar on an Earth observation satellite.</gco:CharacterString>
+                  </gmi:description>
+                  <gmi:instrument xlink:href="#sarInstrument"/>
+                  <eos:otherPropertyType>
+                    <gco:RecordType xlink:href="http://earthdata.nasa.gov/schemas/eos/eos.xsd#xpointer(//element[@name='EOS_AdditionalAttributes'])">EOS Additional Attributes</gco:RecordType>
+                  </eos:otherPropertyType>
+                  <eos:otherProperty>
+                    <gco:Record>
+                      <eos:additionalAttributes>
+                        <eos:EOS_AdditionalAttributes>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="acquisitionInformation">acquisitionInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>absolute orbit number</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>absolute orbit number of the image</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="int">int</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>5467</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="acquisitionInformation">acquisitionInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>frame number</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>frame number of the image</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="int">int</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>20</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="acquisitionInformation">acquisitionInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>track number</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>track number of the image</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="int">int</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>5</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="acquisitionInformation">acquisitionInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>look direction</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>look direction of the sensor</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="string">string</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>Left</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="acquisitionInformation">acquisitionInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>orbit direction</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>orbit direction of the sensor</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="string">string</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>Ascending</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="acquisitionInformation">acquisitionInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>list of frequencies</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>list of data frequencies in the product</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="string">string</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>['A', 'B']</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="processingInformation">processingInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>center frequency</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>center frequency - frequency A</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="string">string</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>1239000000.0</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="processingInformation">processingInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>center frequency</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>center frequency - frequency B</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="string">string</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>1293500000.0</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="processingInformation">processingInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>polarizations</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>list of polarizations - frequency A</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="string">string</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>['HH', 'HV']</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          <eos:additionalAttribute>
+                            <eos:EOS_AdditionalAttribute>
+                              <eos:reference>
+                                <eos:EOS_AdditionalAttributeDescription>
+                                  <eos:type>
+                                    <eos:EOS_AdditionalAttributeTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeTypeCode" codeListValue="processingInformation">processingInformation</eos:EOS_AdditionalAttributeTypeCode>
+                                  </eos:type>
+                                  <eos:name>
+                                    <eos:CharacterString>polarizations</eos:CharacterString>
+                                  </eos:name>
+                                  <eos:description>
+                                    <eos:CharacterString>list of polarizations - frequency B</eos:CharacterString>
+                                  </eos:description>
+                                  <eos:dataType>
+                                    <eos:EOS_AdditionalAttributeDataTypeCode codeList="http://earthdata.nasa.gov/metadata/resources/codelist.xml#EOS_AdditionalAttributeDataTypeCode" codeListValue="string">string</eos:EOS_AdditionalAttributeDataTypeCode>
+                                  </eos:dataType>
+                                </eos:EOS_AdditionalAttributeDescription>
+                              </eos:reference>
+                              <eos:value>
+                                <eos:CharacterString>['HH', 'HV']</eos:CharacterString>
+                              </eos:value>
+                            </eos:EOS_AdditionalAttribute>
+                          </eos:additionalAttribute>
+                          </eos:EOS_AdditionalAttributes>
+                      </eos:additionalAttributes>
+                    </gco:Record>
+                  </eos:otherProperty>
+                </eos:EOS_Platform>
+              </gmi:platform>
+            </gmi:MI_AcquisitionInformation>
+          </gmi:acquisitionInformation>
+        </gmi:MI_Metadata>
+      </gmd:has>
+    </gmd:DS_DataSet>
+  </gmd:composedOf>
+  <gmd:seriesMetadata gco:nilReason="inapplicable"/>
+</gmd:DS_Series>
