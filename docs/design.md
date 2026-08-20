@@ -45,12 +45,31 @@ nisar_play/
   `longitude`, `xCoordinates`/`yCoordinates` (EASE-Grid 2.0).
 - Background reference: `.windsurf/skills/nisar-instruments-data/SKILL.md`.
 
+- Reader module: `src/nisar_play/sme2.py` — opens the `grids` group,
+  loads a quality-masked soil moisture grid (fill values NaN; pixels whose
+  `retrievalQualityFlag` least significant bit marks the retrieval "not
+  recommended" are masked), and computes the granule's lat/lon bounds.
+
 ## Visualization Design
 
-- Soil moisture will be plotted from the SME2 grid (EASE-Grid 2.0
-  projection, 200 m posting).
-- *Decision pending (v0.1 Sprint 2 planning)*: plotting stack
-  (matplotlib alone or with cartopy for projection-aware maps).
+- Plotting stack: **matplotlib + cartopy** (projection-aware GeoAxes).
+- SME2 grids are posted on EASE-Grid 2.0 (EPSG:6933) but ship 1-D
+  `latitude`/`longitude` coordinate arrays, so layers are drawn in
+  geographic coordinates via `transform=ccrs.PlateCarree()`.
+- Plotting module: `src/nisar_play/plots.py` — two figures:
+  - Soil moisture map: `pcolormesh` on a cartopy GeoAxes with coastlines,
+    state borders, gridline labels, and a units-labeled colorbar.
+  - Footprint overview map: the granule's lat/lon bounding box drawn on a
+    padded regional map with coastlines.
+- Figures are saved as PNGs (default `output/`, untracked) and can also be
+  shown interactively. `bbox_inches="tight"` is avoided when saving — it
+  collapses the cartopy GeoAxes, leaving only the colorbar.
+- CLI: `plot-sme2` (console script, `src/nisar_play/cli.py`; also
+  `python -m nisar_play`) produces both figures; the SME2 file path
+  defaults to the sample file in `data/`.
+- Cartopy downloads Natural Earth background shapefiles (coastlines,
+  borders) on first use and caches them locally; NISAR data itself is
+  never downloaded — it is read from local files.
 
 ## Testing
 
@@ -61,6 +80,10 @@ nisar_play/
 - `tests/test_read_sme2.py` smoke-tests the ability to read the sample
   SME2 product (imports, group structure, non-empty soil moisture,
   plausible lat/lon coordinates).
+- `tests/test_plots_sme2.py` tests the Sprint 2 capabilities: reader
+  functions (quality masking, coordinates, bounds), plot smoke tests on
+  the Agg backend (non-trivial PNG written; no image comparisons), and a
+  CLI smoke test producing both PNGs.
 
 ## Open Decisions
 

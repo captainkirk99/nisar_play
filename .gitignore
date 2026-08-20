@@ -12,4 +12,5 @@ dist/
 
 # Generated figures
 *.png
+output/
 data/*.h5

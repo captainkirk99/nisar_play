@@ -61,6 +61,23 @@ python3 -m venv .venv
 This installs xarray, netCDF4, matplotlib, and cartopy, plus pytest for
 development.
 
+## Plotting Soil Moisture
+
+The `plot-sme2` command (installed with the project) reads an SME2 file and
+writes two PNGs to `output/` (untracked): a soil moisture map and a
+footprint overview map showing the granule's lat/lon bounds.
+
+```bash
+.venv/bin/plot-sme2                    # uses the sample file in data/
+.venv/bin/plot-sme2 path/to/file.h5    # or any SME2 .h5 file
+.venv/bin/plot-sme2 --show             # also display interactively
+.venv/bin/plot-sme2 --output-dir figs  # custom output directory
+```
+
+`python -m nisar_play` is equivalent. Note: cartopy downloads Natural Earth
+coastline/border shapefiles (map backgrounds, not NISAR data) on first use
+and caches them locally.
+
 ## Running Tests
 
 From the project root:
@@ -70,4 +87,6 @@ From the project root:
 ```
 
 The test suite includes a smoke test that opens the sample SME2 file in
-`data/` and verifies its NISAR HDF5 group structure and soil moisture data.
+`data/` and verifies its NISAR HDF5 group structure and soil moisture data,
+plus tests of the reader functions, plotting (PNG output via the Agg
+backend), and the `plot-sme2` CLI.
