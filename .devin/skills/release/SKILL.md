@@ -117,6 +117,7 @@ Before finalizing:
 ### 8. Finalization
 - Save the file to `docs/releases/v{VERSION}.md`
 - Do NOT commit or push (per user rules)
+- If the user later asks for a commit: NEVER credit Devin, AI assistants, or any model in commit messages — no "Generated with", "Co-Authored-By", or similar attribution lines
 - Provide summary: "Release notes for v{VERSION} generated from {N} issues and {M} PRs"
 - Inform the user the release notes are ready for review
 

@@ -92,6 +92,11 @@ This workflow implements a roadmap sprint by resolving its GitHub issue, extract
 
 ## Implementation Guidelines
 
+### Git Commit Standards
+- NEVER credit Devin, AI assistants, or any model in commit messages — no "Generated with", "Co-Authored-By: Devin", or similar attribution lines
+- Commit messages describe only the change itself (focus on the "why")
+- Do not commit or push without explicit user permission (per user rules)
+
 ### Code Quality Standards
 - Follow existing code style and patterns (PEP 8 for Python)
 - Maintain backward compatibility
