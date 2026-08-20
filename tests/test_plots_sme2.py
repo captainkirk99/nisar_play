@@ -1,6 +1,7 @@
 """Sprint 2 tests: SME2 reader functions, plotting smoke tests, and CLI.
 
-Uses the sample SME2 product in ``data/``. Plot tests run on the
+Uses the sample SME2 product in ``data/`` when present, else the
+synthetic fixture (see ``conftest.py``). Plot tests run on the
 matplotlib Agg backend and only assert that a non-trivial PNG is
 produced (no image comparisons).
 """
@@ -16,19 +17,15 @@ from nisar_play import cli, plots, sme2
 
 
 @pytest.fixture(scope="module")
-def sme2_path():
-    return sme2.find_sample_file()
-
-
-@pytest.fixture(scope="module")
 def soil_moisture(sme2_path):
     return sme2.load_soil_moisture(sme2_path)
 
 
 def test_find_sample_file(sme2_path):
-    """The sample SME2 file is found and exists."""
+    """SME2 file discovery finds the fixture file in its directory."""
     assert sme2_path.exists()
     assert sme2_path.suffix == ".h5"
+    assert sme2.find_sample_file(sme2_path.parent) == sme2_path
 
 
 def test_load_soil_moisture_masked(sme2_path, soil_moisture):
@@ -78,9 +75,9 @@ def test_plot_footprint_writes_png(sme2_path, tmp_path):
     assert out.exists() and out.stat().st_size > 1000
 
 
-def test_cli_produces_both_pngs(tmp_path):
+def test_cli_produces_both_pngs(sme2_path, tmp_path):
     """The CLI entry point produces both expected PNGs."""
-    rc = cli.main(["--output-dir", str(tmp_path)])
+    rc = cli.main([str(sme2_path), "--output-dir", str(tmp_path)])
     assert rc == 0
     for name in ("soil_moisture.png", "footprint.png"):
         f = tmp_path / name

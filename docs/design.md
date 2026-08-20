@@ -84,6 +84,25 @@ nisar_play/
   functions (quality masking, coordinates, bounds), plot smoke tests on
   the Agg backend (non-trivial PNG written; no image comparisons), and a
   CLI smoke test producing both PNGs.
+- The sample SME2 granule (119 MB) is untracked, so `tests/conftest.py`
+  provides a session-scoped `sme2_path` fixture: the real granule in
+  `data/` when present, otherwise a small synthetic SME2-like HDF5 file
+  (same group/dataset structure, tiny grid, fill values and
+  "not recommended" quality-flag pixels) generated with netCDF4. Setting
+  `NISAR_PLAY_FORCE_SYNTHETIC=1` forces the synthetic file locally to
+  reproduce the CI environment.
+
+## Continuous Integration
+
+- `.github/workflows/ci.yml` runs on pull requests targeting `main` and
+  pushes to `main` (Python 3.12): `pytest` followed by
+  `mkdocs build --strict`. Because CI checkouts lack the sample granule,
+  the test suite runs against the synthetic fixture; pip and cartopy's
+  Natural Earth downloads are cached between runs.
+- Merges into `main` are gated by a branch protection rule requiring the
+  `ci / test` check to pass (manual repository-settings step: Settings →
+  Branches → add rule for `main` → "Require status checks to pass before
+  merging" → select the `test` check).
 
 ## Documentation Toolchain
 

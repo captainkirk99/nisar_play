@@ -39,3 +39,5 @@ Requirements map to roadmap items in `docs/roadmap.md`:
 |-------------|--------------|
 | R1, R2 | v0.1 Sprint 1: Python Setup |
 | R3, R4 | v0.1 Sprint 2: Data Exploration |
+| N2 | v0.1 Sprint 3: Documentation Site |
+| N1 | v0.1 Sprint 4: Add CI |

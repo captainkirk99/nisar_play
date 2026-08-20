@@ -36,6 +36,7 @@ nav:
       - v0.1 Sprint 1: plan/v0.1-sprint1-python-setup.md
       - v0.1 Sprint 2: plan/v0.1-sprint2-data-exploration.md
       - v0.1 Sprint 3: plan/v0.1-sprint3-docs-site.md
+      - v0.1 Sprint 4: plan/v0.1-sprint4-ci.md
 
 markdown_extensions:
   - admonition

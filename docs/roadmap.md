@@ -54,3 +54,26 @@
 **Detailed Plan:** See `docs/plan/v0.1-sprint3-docs-site.md`
 
 **GitHub Issue:** [#3](https://github.com/captainkirk99/nisar_play/issues/3)
+
+### Sprint 4: Add CI
+- Add a GitHub Actions CI workflow that runs the test suite and the strict
+  docs build on pull requests targeting `main` and on pushes to `main`
+- Make the test suite runnable without the large (119 MB, untracked) sample
+  SME2 granule: generate a small synthetic SME2-like HDF5 fixture with the
+  same group/dataset structure and use it when the real file is absent
+- Document enabling branch protection on `main` requiring the CI check, so
+  branches must pass CI before merge
+
+**Clarified decisions:**
+- Data in CI: synthetic SME2-like HDF5 test fixture (tiny grid, same
+  structure); no data download, no Git LFS; real-file tests still run
+  locally when the sample granule is present
+- Triggers: `pull_request` targeting `main` plus `push` to `main`
+- Checks: pytest and `mkdocs build --strict` (no linter this sprint)
+- Python version: 3.12 only (matches `requires-python` and the docs workflow)
+- Enforcement: branch protection rule on `main` requiring the CI check
+  (manual repository-settings step, documented like the GitHub Pages setup)
+
+**Detailed Plan:** See `docs/plan/v0.1-sprint4-ci.md`
+
+**GitHub Issue:** [#5](https://github.com/captainkirk99/nisar_play/issues/5)
