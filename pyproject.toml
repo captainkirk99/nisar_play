@@ -22,6 +22,11 @@ plot-sme2 = "nisar_play.cli:main"
 dev = [
     "pytest",
 ]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]

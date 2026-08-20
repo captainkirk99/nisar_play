@@ -37,3 +37,20 @@
 **Detailed Plan:** See `docs/plan/v0.1-sprint2-data-exploration.md`
 
 **GitHub Issue:** [#2](https://github.com/captainkirk99/nisar_play/issues/2)
+
+### Sprint 3: Documentation Site
+- Convert docstrings in `src/nisar_play/` to NumPy style
+- Build a documentation site with MkDocs (Material theme) + mkdocstrings,
+  including an auto-generated API reference and the existing `docs/` pages
+- Publish the site to GitHub Pages via a GitHub Actions workflow on pushes
+  to `main`
+
+**Clarified decisions:**
+- Docstring convention: NumPy style (scientific-Python standard; parseable by mkdocstrings)
+- Generator: MkDocs + Material theme + mkdocstrings (Markdown-native, reuses existing `docs/*.md`)
+- Hosting: GitHub Pages, deployed by a GitHub Actions workflow on push to `main`
+- Docs dependencies added as a `docs` optional-dependency group in `pyproject.toml`
+
+**Detailed Plan:** See `docs/plan/v0.1-sprint3-docs-site.md`
+
+**GitHub Issue:** [#3](https://github.com/captainkirk99/nisar_play/issues/3)

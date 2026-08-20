@@ -16,7 +16,18 @@ from . import plots, sme2
 
 
 def main(argv: list[str] | None = None) -> int:
-    """Entry point: produce the soil moisture and footprint figures."""
+    """Produce the soil moisture and footprint figures.
+
+    Parameters
+    ----------
+    argv : list of str or None, optional
+        Command-line arguments; defaults to ``sys.argv[1:]``.
+
+    Returns
+    -------
+    int
+        Process exit code (0 on success).
+    """
     parser = argparse.ArgumentParser(
         prog="plot-sme2",
         description="Plot soil moisture and lat/lon bounds from a NISAR SME2 file.",

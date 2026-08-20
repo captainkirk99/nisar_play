@@ -85,6 +85,21 @@ nisar_play/
   the Agg backend (non-trivial PNG written; no image comparisons), and a
   CLI smoke test producing both PNGs.
 
+## Documentation Toolchain
+
+- Docstrings follow the **NumPy convention** (Parameters / Returns /
+  Raises sections) throughout `src/nisar_play/`.
+- The documentation site is built with **MkDocs + Material theme +
+  mkdocstrings** (`mkdocs.yml`): an auto-generated API reference
+  (`docs/api/*.md`) plus the narrative pages in `docs/` (index,
+  requirements, design, roadmap, sprint plans).
+- `mkdocs build --strict` is the docs regression check; local output goes
+  to `site/` (untracked).
+- Publishing: `.github/workflows/docs.yml` builds the site and deploys it
+  to **GitHub Pages** on pushes to `main`
+  (https://captainkirk99.github.io/nisar_play/). GitHub Pages must be
+  enabled with "GitHub Actions" as the source in the repository settings.
+
 ## Open Decisions
 
 Open decisions above are resolved during sprint planning (`/roadmap`

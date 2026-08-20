@@ -21,9 +21,22 @@ NOT_RECOMMENDED_BIT = 0x1
 
 
 def find_sample_file(data_dir: Path = DATA_DIR) -> Path:
-    """Return the first SME2 sample file found in *data_dir*.
+    """Return the first SME2 sample file found in a directory.
 
-    Raises ``FileNotFoundError`` if no ``NISAR_L3_*_SME2_*.h5`` file exists.
+    Parameters
+    ----------
+    data_dir : Path, optional
+        Directory to search. Defaults to the project's ``data/`` directory.
+
+    Returns
+    -------
+    Path
+        Path to the first file matching ``NISAR_L3_*_SME2_*.h5``.
+
+    Raises
+    ------
+    FileNotFoundError
+        If no matching SME2 file exists in *data_dir*.
     """
     files = sorted(Path(data_dir).glob("NISAR_L3_*_SME2_*.h5"))
     if not files:
@@ -32,22 +45,42 @@ def find_sample_file(data_dir: Path = DATA_DIR) -> Path:
 
 
 def open_grids(path: Path) -> xr.Dataset:
-    """Open the SME2 ``grids`` group of *path* as an xarray Dataset.
+    """Open the SME2 ``grids`` group of a product file.
 
     Fill values (``_FillValue = -9999``) are automatically masked to NaN
     by the netCDF4 engine.
+
+    Parameters
+    ----------
+    path : Path
+        Path to an SME2 ``.h5`` product file.
+
+    Returns
+    -------
+    xarray.Dataset
+        The ``/science/LSAR/SME2/grids`` group as a Dataset.
     """
     return xr.open_dataset(path, engine="netcdf4", group=GRIDS_GROUP)
 
 
 def load_soil_moisture(path: Path, mask_quality: bool = True) -> xr.DataArray:
-    """Load the soil moisture grid from *path* with lat/lon coordinates.
+    """Load the soil moisture grid with lat/lon coordinates.
 
-    Returns a 2-D DataArray (dims ``yCoordinates`` x ``xCoordinates``) with
-    1-D ``latitude`` and ``longitude`` coordinate variables attached.
-    Fill values are always NaN. When *mask_quality* is true, pixels whose
-    ``retrievalQualityFlag`` least significant bit marks the retrieval as
-    "not recommended" are additionally masked to NaN.
+    Parameters
+    ----------
+    path : Path
+        Path to an SME2 ``.h5`` product file.
+    mask_quality : bool, optional
+        If true (default), pixels whose ``retrievalQualityFlag`` least
+        significant bit marks the retrieval as "not recommended" are
+        masked to NaN in addition to fill values.
+
+    Returns
+    -------
+    xarray.DataArray
+        2-D soil moisture grid (dims ``yCoordinates`` x ``xCoordinates``)
+        with 1-D ``latitude`` and ``longitude`` coordinate variables
+        attached. Fill values are always NaN.
     """
     with open_grids(path) as ds:
         sm = ds["soilMoisture"].copy()
@@ -66,7 +99,18 @@ def load_soil_moisture(path: Path, mask_quality: bool = True) -> xr.DataArray:
 
 
 def lonlat_bounds(path: Path) -> tuple[float, float, float, float]:
-    """Return the granule's lat/lon bounds as (lon_min, lon_max, lat_min, lat_max)."""
+    """Return the granule's geographic bounds.
+
+    Parameters
+    ----------
+    path : Path
+        Path to an SME2 ``.h5`` product file.
+
+    Returns
+    -------
+    tuple of float
+        Bounds as ``(lon_min, lon_max, lat_min, lat_max)`` in degrees.
+    """
     with open_grids(path) as ds:
         lat = ds["latitude"].values
         lon = ds["longitude"].values

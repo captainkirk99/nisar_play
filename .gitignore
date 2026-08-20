@@ -6,6 +6,9 @@ __pycache__/
 build/
 dist/
 
+# MkDocs build output
+site/
+
 # Tooling caches
 .pytest_cache/
 .ipynb_checkpoints/
@@ -13,4 +16,5 @@ dist/
 # Generated figures
 *.png
 output/
+!docs/figures/*.png
 data/*.h5

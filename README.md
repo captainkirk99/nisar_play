@@ -78,6 +78,37 @@ footprint overview map showing the granule's lat/lon bounds.
 coastline/border shapefiles (map backgrounds, not NISAR data) on first use
 and caches them locally.
 
+### Example Output
+
+![Soil moisture map](docs/figures/soil_moisture.png)
+
+*Soil moisture (m³/m³) from the sample SME2 granule over southern
+Nevada/California, drawn on a cartopy map with state borders and
+gridlines. Only recommended retrievals are shown: fill values and pixels
+whose `retrievalQualityFlag` marks the retrieval "not recommended" (e.g.
+urban areas, water, dense vegetation) are left blank. The tilted swath
+edge reflects the satellite's orbit track on the EASE-Grid 2.0 grid.*
+
+![Footprint overview map](docs/figures/footprint.png)
+
+*Footprint overview: the granule's lat/lon bounding box (red, ~35–38°N,
+117.6–113.4°W) plotted on a padded regional map with coastlines and state
+borders, showing where the data sits in the southwestern United States.*
+
+## Documentation
+
+Project documentation (including the API reference) is published at
+<https://captainkirk99.github.io/nisar_play/>, built with MkDocs
+(Material theme) and mkdocstrings from NumPy-style docstrings, and
+deployed to GitHub Pages by a GitHub Actions workflow on pushes to
+`main`. To build and preview locally:
+
+```bash
+.venv/bin/pip install -e ".[docs]"
+.venv/bin/mkdocs serve     # live preview at http://127.0.0.1:8000
+.venv/bin/mkdocs build --strict   # build into site/ (untracked)
+```
+
 ## Running Tests
 
 From the project root:

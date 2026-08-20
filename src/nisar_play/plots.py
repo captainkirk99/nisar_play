@@ -18,7 +18,24 @@ Bounds = tuple[float, float, float, float]  # lon_min, lon_max, lat_min, lat_max
 
 
 def _finish(fig, out_path: Path | None, show: bool) -> Path | None:
-    """Save *fig* to *out_path* (if given), optionally show it, then close."""
+    """Save a figure, optionally show it, then close it.
+
+    Parameters
+    ----------
+    fig : matplotlib.figure.Figure
+        Figure to finalize.
+    out_path : Path or None
+        PNG destination; parent directories are created. If None, the
+        figure is not saved. ``bbox_inches="tight"`` is intentionally not
+        used — it collapses cartopy GeoAxes.
+    show : bool
+        If true, display the figure interactively before closing.
+
+    Returns
+    -------
+    Path or None
+        The saved path, or None if not saved.
+    """
     if out_path is not None:
         out_path = Path(out_path)
         out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -35,13 +52,26 @@ def plot_soil_moisture(
     show: bool = False,
     title: str = "NISAR SME2 Soil Moisture",
 ) -> Path | None:
-    """Plot the soil moisture grid *sm* on a cartopy map.
+    """Plot a soil moisture grid on a cartopy map.
 
-    *sm* must carry 1-D ``latitude`` and ``longitude`` coordinates (as
-    returned by :func:`nisar_play.sme2.load_soil_moisture`). Masked/invalid
-    pixels (NaN) are left blank. The figure is saved to *out_path* when
-    given and shown interactively when *show* is true; the saved path is
-    returned.
+    Parameters
+    ----------
+    sm : xarray.DataArray
+        2-D soil moisture grid carrying 1-D ``latitude`` and ``longitude``
+        coordinates (as returned by
+        :func:`nisar_play.sme2.load_soil_moisture`). Masked/invalid pixels
+        (NaN) are left blank.
+    out_path : Path or None, optional
+        PNG destination; not saved if None.
+    show : bool, optional
+        If true, also display the figure interactively.
+    title : str, optional
+        Plot title.
+
+    Returns
+    -------
+    Path or None
+        The saved PNG path, or None if not saved.
     """
     proj = ccrs.PlateCarree()
     fig, ax = plt.subplots(figsize=(10, 8), subplot_kw={"projection": proj})
@@ -70,12 +100,27 @@ def plot_footprint(
     title: str = "NISAR SME2 Granule Footprint",
     pad_factor: float = 1.5,
 ) -> Path | None:
-    """Plot the granule's lat/lon bounding box on a regional overview map.
+    """Plot a granule's lat/lon bounding box on a regional overview map.
 
-    *bounds* is (lon_min, lon_max, lat_min, lat_max). The map extent is the
-    bounding box padded by *pad_factor* times its size on each side. The
-    figure is saved to *out_path* when given and shown interactively when
-    *show* is true; the saved path is returned.
+    Parameters
+    ----------
+    bounds : tuple of float
+        Bounding box as ``(lon_min, lon_max, lat_min, lat_max)`` in
+        degrees (as returned by :func:`nisar_play.sme2.lonlat_bounds`).
+    out_path : Path or None, optional
+        PNG destination; not saved if None.
+    show : bool, optional
+        If true, also display the figure interactively.
+    title : str, optional
+        Plot title; the bounds are appended on a second line.
+    pad_factor : float, optional
+        Map extent padding on each side, as a multiple of the bounding
+        box size.
+
+    Returns
+    -------
+    Path or None
+        The saved PNG path, or None if not saved.
     """
     lon_min, lon_max, lat_min, lat_max = bounds
     pad_lon = (lon_max - lon_min) * pad_factor
