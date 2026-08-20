@@ -15,9 +15,17 @@ dependencies = [
     "cartopy",
 ]
 
+[project.scripts]
+plot-sme2 = "nisar_play.cli:main"
+
 [project.optional-dependencies]
 dev = [
     "pytest",
+]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]",
 ]
 
 [tool.setuptools.packages.find]

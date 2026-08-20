@@ -1,0 +1,43 @@
+site_name: nisar_play
+site_description: Exploration of NISAR (NASA-ISRO SAR) data products
+site_url: https://captainkirk99.github.io/nisar_play/
+repo_url: https://github.com/captainkirk99/nisar_play
+
+theme:
+  name: material
+  palette:
+    primary: blue grey
+  features:
+    - navigation.sections
+    - content.code.copy
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: numpy
+            show_source: true
+            members_order: source
+
+nav:
+  - Home: index.md
+  - API Reference:
+      - nisar_play.sme2: api/sme2.md
+      - nisar_play.plots: api/plots.md
+      - nisar_play.cli: api/cli.md
+  - Project:
+      - Requirements: requirements.md
+      - Design: design.md
+      - Roadmap: roadmap.md
+  - Sprint Plans:
+      - v0.1 Sprint 1: plan/v0.1-sprint1-python-setup.md
+      - v0.1 Sprint 2: plan/v0.1-sprint2-data-exploration.md
+      - v0.1 Sprint 3: plan/v0.1-sprint3-docs-site.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.superfences
